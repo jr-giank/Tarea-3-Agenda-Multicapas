@@ -9,5 +9,5 @@ De cada contacto se almacenarán su nombre, apellido y teléfono.
 Utilizando la función fetch usted podrá obtener mediante el método HTTP GET el listado de todos los contactos almacenados en la agenda en formato JSON mediante el siguiente enlace: http://www.raydelto.org/agenda.php . De igual modo, invocando la misma URL mediante el método POST de HTTP y enviando un cuerpo JSON con los campos nombre, apellido, telefono usted podrá agregar nuevos contactos a su agenda.
 
 ![Contactos](./img/contactos.png)
-![Nuevo Contacto](./img/nuevoContacto.png)
 ![Registro Contacto](./img/registrarContacto.png)
+![Nuevo Contacto](./img/nuevoContacto.png)
