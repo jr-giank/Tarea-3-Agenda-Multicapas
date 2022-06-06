@@ -5,6 +5,78 @@
     color: #fff;
 }
 
+#formulario{
+    display: none;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+#formulario h3{
+    background-color: transparent;
+    margin: 10px 0px 30px 0px;
+}
+
+#formulario div{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+}
+
+#formulario div input{
+    width: 200px;
+    margin: 10px auto 14px auto;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: rgb(236, 220, 220);
+    text-align: center;
+    font-size: 17px;
+}
+
+#formulario div input:focus{
+    outline: none;
+}
+
+#formulario button{
+    margin: auto;
+    padding: 4px 8px;
+    border-color: #fff;
+    border-style: solid;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #53576f;
+}
+
+#formulario button:hover{
+    transform: scale(1.05);
+}
+
+#top{
+    display: grid;
+}
+
+#top button{
+    justify-self: flex-end;
+    margin: 0px 30px 60px 0;
+    text-decoration: none;
+    font-size: 19px;
+    border: none;
+    cursor: pointer;
+}
+
+h2{
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 0 40px 0;
+}
+
 #contactos{
     display: flex;
     flex-wrap: wrap;

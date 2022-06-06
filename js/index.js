@@ -1,3 +1,4 @@
+let mostrar = true;
 
 const getContacts = async () => {
     const response = await fetch('https://www.raydelto.org/agenda.php', {
@@ -31,3 +32,41 @@ const getContacts = async () => {
     })
 }
 
+const addContacts = async (e) => {
+
+    e.preventDefault();
+    
+    let nombre = document.getElementById('nombre');
+    let apellido = document.getElementById('apellido');
+    let telefono = document.getElementById('telefono');
+
+    const response = await fetch('https://www.raydelto.org/agenda.php', {
+        method: 'POST',
+        body: JSON.stringify({'nombre': nombre.value, 'apellido': apellido.value, 'telefono': telefono.value})
+    })
+
+    nombre.value = '';
+    apellido.value = '';
+    telefono.value = '';
+
+    getContacts();
+    ocultar();
+}
+
+const ocultar = () => {
+
+    if(mostrar){
+        document.getElementById('formulario').style.display = 'block';
+        document.getElementById('contactos').style.display = 'none';
+        mostrar = false;
+    }else{
+        document.getElementById('formulario').style.display = 'none';
+        document.getElementById('contactos').style.display = 'block';
+        mostrar = true;
+    }
+}
+
+document.addEventListener('DOMContentLoaded', getContacts(), false);
+
+const form = document.querySelector('form');
+form.addEventListener('submit', addContacts);
