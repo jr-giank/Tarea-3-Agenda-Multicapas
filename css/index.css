@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    background: #22242e;
+    color: #fff;
+}
+
+#contactos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 700px;
+    margin: auto;
+}
+
+#contactos .contenedor{
+    margin: 10px auto 10px auto;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 160px;
+    background-color: #292e43;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#contactos .contenedor h3{
+    background-color: transparent;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#contactos .contenedor input{
+    width: 50%;
+    margin: 6px auto 0 auto;
+    border: none;
+    /* color: #fff; */
+    text-align: center;
+    background-color: transparent;
+}
